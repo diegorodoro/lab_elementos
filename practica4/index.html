@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Práctica 4 | Ibero Puebla</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body class="d-flex flex-column h-100">
+        <main class="flex-shrink-0">
+            <!-- Navigation-->
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+                <div class="container px-5">
+                    <a class="navbar-brand">Menu</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>                    
+                            <li class="nav-item"><a class="nav-link" href="../index.html#resumen">Acerca de mi</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../index.html#practicas">Prácticas</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- Seccion TITULO de Portafolio-->
+            <header class="bg-primary py-2 mt-6">
+                <div class="container px-5">
+                    <div class="row gx-5 align-items-center justify-content-center">
+                        <div class="col-lg-8 col-xl-7 col-xxl-6">
+                            <div class="my-5 text-center text-xl-start">
+                                <h1 class="display-6 fw-bolder text-white mb-2">Portafolio de Actividades</h1>
+                                <h1 class="display-8 fw-bolder text-white mb-2">Laboratorio de Elementos Programables</h1>
+                                <p id="resumen" class="display-8 fw-normal text-white-50 mb-4">Departamento de Ciencias e Ingenierías | Universidad Iberoamericana Puebla, México.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Seccion TITULO de la Práctica-->
+            <section class="py-3" id="scroll-target">
+                <div class="container px-5 my-2">
+                    <!-- Post header-->
+                    <header class="mb-4">
+                        <!-- Post title-->
+                        <h1 class="fw-bolder mb-1">Práctica 4: ATTINY pt.2</h1>
+
+                        <!-- ETIQUETA DE ALUMNO (Hacer una por cada alumno)-->
+                        <img class="img-fluid rounded-circle" width="50px" src="../assets/diego.png" alt="..." />
+                        <div class="ms-2">
+                            <div class="fw-bold">Diego Rodríguez Orozco</div>
+                            <div class="text-muted">Ing. Sistemas Computacionales</div>
+                            </div>
+                        <!--Aqui termina etiqueta de alumno-->
+
+                        <div class="text-muted fst-italic mt-2 mb-2">Fecha: Octubre 22, 2023</div>
+                        <!-- ETIQUETAS O TOPICOS IMPORTANTES DE LA PRACTICA-->
+                        <a class="badge bg-primary text-decoration-none link-light" >ATTINY</a>
+                        <a class="badge bg-primary text-decoration-none link-light" >Electrónica</a>
+
+                    </header>
+                </div>
+            </section>
+
+            <!-- Seccion de CONTENIDO de la Práctica-->
+            <section>
+                <div class="container px-5">
+
+                    <figure class="mb-4"><img class="img-fluid rounded" width="600" src="img/ATTINY85.jpg" /></figure>
+                                
+                    <p id="resumen">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Resumen -</h2>
+                        <p class="fs-6 mb-4">El objetivo de esta práctica, es configurar y elaborar ejercicios de un ATTINY85 para así comprender su funcionamiento y entender las diferentes capacidades que tiene un microcontrolador, en este caso se trabaja con las entradas y salidas.</p>
+                        
+                        <p id="intro">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Introducción -</h2>
+                        <p class="fs-6 mb-4">El ATtiny85 es un microcontrolador de 8 bits de la familia AVR desarrollado por la empresa Atmel, que ahora forma parte de Microchip Technology. Este pequeño pero poderoso dispositivo se ha convertido en una herramienta esencial en el mundo de la electrónica y la programación debido a su tamaño compacto, bajo consumo de energía y versatilidad en una amplia gama de aplicaciones.</p>
+
+                        <p class="fs-6 mb-4">A pesar de su diminuto tamaño, el ATtiny85 es capaz de realizar una variedad de tareas, desde controlar dispositivos electrónicos simples hasta ejecutar complejas operaciones de procesamiento de datos. Con un tamaño de encapsulado DIP de 8 pines y una amplia gama de periféricos y características, este microcontrolador se ha ganado la admiración de los entusiastas de la electrónica y los ingenieros por igual.</p>
+                        
+                        <p id="materiales">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Materiales -</h2>
+                        <ul>
+                            <li>
+                                <p class="fs-6 mb-4">Protoboard</p>
+                            </li>
+                            <li>
+                                <p class="fs-6 mb-4">LED's</p>
+                            </li>
+                            <li>
+                                <p class="fs-6 mb-4">Reistencias 220 ohms</p>
+                            </li>
+                            <li>
+                                <p class="fs-6 mb-4">Servomotos</p>
+                            </li>
+                            <li>
+                                <p class="fs-6 mb-4">ATTINY85</p>
+                            </li>
+                            <li>
+                                <p class="fs-6 mb-4">DC motor</p>
+                            </li>
+                            <li>
+                                <p class="fs-6 mb-4">Buzzer</p>
+                            </li>
+                            <li>
+                                <p class="fs-6 mb-4">LED RGB</p>
+                            </li>
+                        </ul>
+                        
+                        <p id="desarrollo">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Desarrollo -</h2>
+                        <p class="fs-6 mb-4">En esta actividad, el maestro nos proporcionó una carpeta en Tinkercad que contenía circuitos que debíamos recrear físicamente utilizando un protoboard y componentes electrónicos. El procedimiento consistía principalmente en comprender el circuito y simularlo antes de ensamblar el circuito y cargar el código en el ATTINY85.</p>
+                        
+                        
+                            <p id="simulacion">
+                            <h1 class="fw-bolder2 mb-4 mt-5 fs-5">Simulación</h1>
+                            <p class="fs-6 mb-4">Se simularon los circuitos en Thinkercad.</p>
+                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="800" src="img/simulacion.png" alt="..." /></figure>
+                    
+                        <p id="resultados">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Resultados -</h2>
+                            <p class="fs-6 mb-4">Después de analizar la simulación, se ejecutó de forma correcta los circuitos con la funcionalidad requerida.</p>
+                        
+                        <section id="practicas">
+                                <div class="container px-5 my-2">
+                                    <h2 class="fw-bolder fs-5 mb-4">Reportes de Prácticas:</h2>
+                                    <div class="row gx-5">
+
+                                    <!-- Ejemplo 1 -->
+                                        <div class="col-lg-4 mb-5">
+                                            <div class="card h-100 shadow border-0">
+                                                <div class="card-body px-4">
+                                                    <h5 class="card-title mt-3 mb-1">1_ATTINY LED-2 BOTONES</h5>
+                                                </div>
+                                                <center>
+                                                    <video width="60%" controls muted muted>
+                                                        <source src="videos/practica4_ej1.mp4" type="video/mp4">
+                                                    </video>   
+                                                </center>                                 
+                                        
+                                                <center>
+                                                    <iframe
+                                                        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=text%2Fx-csrc&width=320&ds=true&dsyoff=22px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%252F%252F%2520Codigo%2520Attiny85%250A%252F%252F%250A%250Aint%2520flag%253D0%253B%250A%2520%2520%250Avoid%2520setup%28%29%250A%257B%250A%2520%2520pinMode%282%252C%2520OUTPUT%29%253B%250A%2520%2520pinMode%283%252C%2520INPUT%29%253B%250A%2520%2520pinMode%284%252C%2520INPUT%29%253B%250A%257D%250A%250Avoid%2520loop%28%29%250A%257B%250A%2520%2520if%28digitalRead%283%29%253D%253DHIGH%29%257B%250A%2520%2520%2520%2520flag%253D1%253B%250A%2520%2520%257D%250A%2520%2520%250A%2520%2520if%28digitalRead%284%29%253D%253DHIGH%29%257B%250A%2520%2520%2520%2520flag%253D0%253B%250A%2520%2520%257D%250A%2520%2520%250A%2520%2520if%28flag%253D%253D1%29%257B%250A%2520%2520%2520%2520digitalWrite%282%252C%2520HIGH%29%253B%250A%2520%2520%257D%250A%2520%2520else%257B%250A%2520%2520%2520%2520digitalWrite%282%252C%2520LOW%29%253B%250A%2520%2520%257D%250A%2520%2520%250A%2520%2520delay%28100%29%253B%250A%257D%250A%2520%2520return%2520go%28f%252C%2520seed%252C%2520%255B%255D%29%250A%257D"
+                                                        style="width: 320px; height: 400px; border:0; transform: scale(1); overflow:hidden;padding-bottom: 20px;"
+                                                        sandbox="allow-scripts allow-same-origin">
+                                                    </iframe>
+                                                </center>
+                                            </div>
+                                        </div>
+
+                                    <!-- Ejemplo 2 -->
+                                        <div class="col-lg-4 mb-5">
+                                            <div class="card h-100 shadow border-0">
+                                                <div class="card-body px-4">
+                                                    <h5 class="card-title mt-3 mb-1">2_Attiny LED Blink - 2 Botones</h5>
+                                                </div>
+                                                <center>
+                                                    <video width="60%" controls muted>
+                                                        <source src="videos/practica4_ej2.mp4" type="video/mp4">
+                                                    </video>   
+                                                </center>                                 
+                                        
+                                                <center>
+                                                    <iframe
+                                                    src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=text%2Fx-csrc&width=320&ds=true&dsyoff=22px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%252F%252F%2520Codigo%2520Attiny85%250A%252F%252F%250A%250Aint%2520flag%253D0%253B%250A%2520%2520%250Avoid%2520setup%28%29%250A%257B%250A%2520%2520pinMode%282%252C%2520OUTPUT%29%253B%250A%2520%2520pinMode%283%252C%2520INPUT%29%253B%250A%2520%2520pinMode%284%252C%2520INPUT%29%253B%250A%257D%250A%250Avoid%2520loop%28%29%250A%257B%250A%2520%2520if%28digitalRead%283%29%253D%253DHIGH%29%257B%250A%2520%2520%2520%2520flag%253D1%253B%250A%2520%2520%257D%250A%2520%2520%250A%2520%2520if%28digitalRead%284%29%253D%253DHIGH%29%257B%250A%2520%2520%2520%2520flag%253D0%253B%250A%2520%2520%257D%250A%2520%2520%250A%2520%2520if%28flag%253D%253D1%29%257B%250A%2520%2520%2520%2520digitalWrite%282%252C%2520HIGH%29%253B%250A%2520%2520%2520%2520delay%28100%29%253B%250A%2520%2520%2520%2520digitalWrite%282%252C%2520LOW%29%253B%250A%2520%2520%257D%250A%2520%2520else%257B%250A%2520%2520%2520%2520digitalWrite%282%252C%2520LOW%29%253B%250A%2520%2520%257D%250A%2520%2520%250A%2520%2520delay%28100%29%253B%250A%257D"
+                                                    style="width: 320px; height: 400px; border:0; transform: scale(1); overflow:hidden;padding-bottom: 20px;"
+                                                        sandbox="allow-scripts allow-same-origin">
+                                                    </iframe>
+                                                </center>
+                                            </div>
+                                        </div>
+                   
+                                    <!-- Ejemplo 3 -->
+                                    <div class="col-lg-4 mb-5">
+                                        <div class="card h-100 shadow border-0">
+                                            <div class="card-body px-4">
+                                                <h5 class="card-title mt-3 mb-1">3_Attiny Buzzer - 2 Botones</h5>
+                                            </div>
+                                            <center>
+                                                <video width="60%" controls muted>
+                                                    <source src="videos/practica4_ej3.mp4" type="video/mp4">
+                                                </video>   
+                                            </center>                                 
+                                    
+                                            <center>
+                                                <iframe
+                                                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=text%2Fx-csrc&width=320&ds=true&dsyoff=22px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%252F%252F%2520Codigo%2520Attiny85%250A%252F%252F%250A%250Aint%2520flag%253D0%253B%250A%2520%2520%250Avoid%2520setup%28%29%250A%257B%250A%2520%2520pinMode%282%252C%2520OUTPUT%29%253B%250A%2520%2520pinMode%283%252C%2520INPUT%29%253B%250A%2520%2520pinMode%284%252C%2520INPUT%29%253B%250A%257D%250A%250Avoid%2520loop%28%29%250A%257B%250A%2520%2520if%28digitalRead%283%29%253D%253DHIGH%29%257B%250A%2520%2520%2520%2520flag%253D1%253B%250A%2520%2520%257D%250A%2520%2520%250A%2520%2520if%28digitalRead%284%29%253D%253DHIGH%29%257B%250A%2520%2520%2520%2520flag%253D0%253B%250A%2520%2520%257D%250A%2520%2520%250A%2520%2520if%28flag%253D%253D1%29%257B%250A%2520%2520%2520%2520digitalWrite%282%252C%2520HIGH%29%253B%250A%2520%2520%2520%2520delay%2850%29%253B%250A%2520%2520%2520%2520digitalWrite%282%252C%2520LOW%29%253B%250A%2520%2520%257D%250A%2520%2520else%257B%250A%2520%2520%2520%2520digitalWrite%282%252C%2520LOW%29%253B%250A%2520%2520%257D%250A%2520%2520%250A%2520%2520delay%2850%29%253B%250A%257D"
+                                                style="width: 320px; height: 400px; border:0; transform: scale(1); overflow:hidden;padding-bottom: 20px;"
+                                                sandbox="allow-scripts allow-same-origin">
+                                                </iframe>
+                                            </center>
+                                        </div>
+                                    </div>
+                                    
+
+                                    <!-- Ejemplo 4 -->
+                                    <div class="col-lg-4 mb-5">
+                                        <div class="card h-100 shadow border-0">
+                                            <div class="card-body px-4">
+                                                <h5 class="card-title mt-3 mb-1">4_Attiny LED RGB - 2 Botones</h5>
+                                            </div>
+                                            <center>
+                                                <video width="60%" controls muted>
+                                                    <source src="videos/practica4_ej4.mp4" type="video/mp4">
+                                                </video>   
+                                            </center>                                 
+                                    
+                                            <center>
+                                                <iframe
+                                                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=text%2Fx-csrc&width=320&ds=true&dsyoff=22px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%252F%252F%2520Codigo%2520Attiny85%250A%252F%252F%250A%2520%2520%250Avoid%2520setup%28%29%250A%257B%250A%2520%2520pinMode%282%252C%2520OUTPUT%29%253B%2520%252F%252FRojo%250A%2520%2520pinMode%281%252C%2520OUTPUT%29%253B%2520%252F%252FAzul%250A%2520%2520pinMode%280%252C%2520OUTPUT%29%253B%2520%252F%252FVerde%250A%2520%2520pinMode%283%252C%2520INPUT%29%253B%250A%2520%2520pinMode%284%252C%2520INPUT%29%253B%250A%257D%250A%250Avoid%2520loop%28%29%250A%257B%250A%2520%2520if%28digitalRead%283%29%253D%253DHIGH%29%257B%250A%2520%2520%2520%2520digitalWrite%282%252C%2520HIGH%29%253B%250A%2520%2520%257D%250A%2520%2520else%2520if%28digitalRead%284%29%253D%253DHIGH%29%257B%250A%2520%2520%2520%2520digitalWrite%281%252C%2520HIGH%29%253B%250A%2520%2520%257D%250A%2520%2520else%257B%250A%2520%2520%2520%2520digitalWrite%282%252C%2520LOW%29%253B%250A%2520%2520%2520%2520digitalWrite%281%252C%2520LOW%29%253B%250A%2520%2520%257D%2520%2520%2520%250A%2520%2520%250A%2520%2520delay%28100%29%253B%250A%257D"
+                                                style="width: 320px; height: 400px; border:0; transform: scale(1); overflow:hidden;padding-bottom: 20px;"
+                                                sandbox="allow-scripts allow-same-origin">
+                                                </iframe>
+                                            </center>
+                                        </div>
+                                    </div>
+
+                                    <!-- Ejemplo 5-->
+                                    <div class="col-lg-4 mb-5">
+                                        <div class="card h-100 shadow border-0">
+                                            <div class="card-body px-4">
+                                                <h5 class="card-title mt-3 mb-1">5_Attiny LED RGB contador - 2 Botones</h5>
+                                            </div>
+                                            <center>
+                                                <video width="60%" controls muted>
+                                                    <source src="videos/practica4_ej5.mp4" type="video/mp4">
+                                                </video>   
+                                            </center>                                 
+                                    
+                                            <center>
+                                                <iframe
+                                                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=text%2Fx-csrc&width=320&ds=true&dsyoff=22px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%252F%252F%2520Codigo%2520Attiny85%250A%252F%252F%250Aint%2520contador%253D0%253B%250A%250Avoid%2520setup%28%29%250A%257B%250A%2520%2520pinMode%282%252C%2520OUTPUT%29%253B%2520%252F%252FRojo%250A%2520%2520pinMode%281%252C%2520OUTPUT%29%253B%2520%252F%252FAzul%250A%2520%2520pinMode%280%252C%2520OUTPUT%29%253B%2520%252F%252FVerde%250A%2520%2520pinMode%283%252C%2520INPUT%29%253B%250A%2520%2520pinMode%284%252C%2520INPUT%29%253B%250A%257D%250A%250Avoid%2520loop%28%29%250A%257B%250A%2520%2520if%28digitalRead%283%29%253D%253DHIGH%29%257B%250A%2520%2520%2520%2520contador%252B%252B%253B%250A%2520%2520%257D%250A%2520%2520%250A%2520%2520if%28digitalRead%284%29%253D%253DHIGH%29%257B%250A%2520%2520%2520%2520contador--%253B%250A%2520%2520%257D%250A%2520%2520%250A%2520%2520if%28contador%253E7%29%257B%250A%2520%2520%2520%2520contador%253D7%253B%250A%2520%2520%257D%250A%2520%2520%250A%2520%2520if%28contador%253C0%29%257B%250A%2520%2520%2520%2520contador%253D0%253B%250A%2520%2520%257D%250A%2520%2520%250A%2520%2520if%28contador%253D%253D0%29%257B%250A%2520%2520%2509digitalWrite%280%252C%2520LOW%29%253B%250A%2520%2520%2509digitalWrite%281%252C%2520LOW%29%253B%250A%2520%2520%2509digitalWrite%282%252C%2520LOW%29%253B%250A%2520%2520%257D%250A%2520%2520else%2520if%28contador%253D%253D1%29%257B%2520%2520%2520%2520%252F%252FROJO%250A%2520%2520%2509digitalWrite%280%252C%2520HIGH%29%253B%250A%2520%2520%2509digitalWrite%281%252C%2520LOW%29%253B%250A%2520%2520%2509digitalWrite%282%252C%2520LOW%29%253B%250A%2520%2520%257D%250A%2520%2520else%2520if%28contador%253D%253D2%29%257B%250A%2520%2520%2509digitalWrite%280%252C%2520LOW%29%253B%250A%2520%2520%2509digitalWrite%281%252C%2520HIGH%29%253B%2520%2520%2520%252F%252FAZUL%250A%2520%2520%2509digitalWrite%282%252C%2520LOW%29%253B%250A%2520%2520%257D%250A%2520%2520else%2520if%28contador%253D%253D3%29%257B%250A%2520%2520%2509digitalWrite%280%252C%2520LOW%29%253B%250A%2520%2520%2509digitalWrite%281%252C%2520LOW%29%253B%250A%2520%2520%2509digitalWrite%282%252C%2520HIGH%29%253B%2520%2520%252F%252FVERDE%250A%2520%2520%257D%250A%2520%2520else%2520if%28contador%253D%253D4%29%257B%250A%2520%2520%2509digitalWrite%280%252C%2520LOW%29%253B%250A%2520%2520%2509digitalWrite%281%252C%2520HIGH%29%253B%250A%2520%2520%2509digitalWrite%282%252C%2520HIGH%29%253B%2520%2520%252F%252FROSA%250A%2520%2520%257D%250A%2520%2520else%2520if%28contador%253D%253D5%29%257B%250A%2520%2520%2509digitalWrite%280%252C%2520HIGH%29%253B%250A%2520%2520%2509digitalWrite%281%252C%2520LOW%29%253B%250A%2520%2520%2509digitalWrite%282%252C%2520HIGH%29%253B%2520%2520%252F%252FAMARILLO%250A%2520%2520%257D%250A%2520%2520else%2520if%28contador%253D%253D6%29%257B%250A%2520%2520%2509digitalWrite%280%252C%2520HIGH%29%253B%250A%2520%2520%2509digitalWrite%281%252C%2520HIGH%29%253B%250A%2520%2520%2509digitalWrite%282%252C%2520LOW%29%253B%2520%2520%252F%252FCYAN%250A%2520%2520%257D%250A%2520%2520else%2520if%28contador%253D%253D7%29%257B%250A%2520%2520%2509digitalWrite%280%252C%2520HIGH%29%253B%250A%2520%2520%2509digitalWrite%281%252C%2520HIGH%29%253B%250A%2520%2520%2509digitalWrite%282%252C%2520HIGH%29%253B%2520%2520%252F%252FBLANCO%250A%2520%2520%257D%250A%2520%2520%250A%2520%2520delay%28500%29%253B%250A%257D"
+                                                style="width: 320px; height: 400px; border:0; transform: scale(1); overflow:hidden;padding-bottom: 20px;"
+                                                sandbox="allow-scripts allow-same-origin">
+                                                </iframe>
+                                            </center>
+                                        </div>
+                                    </div>
+
+                                    <!-- Ejemplo 6-->
+                                    <div class="col-lg-4 mb-5">
+                                        <div class="card h-100 shadow border-0">
+                                            <div class="card-body px-4">
+                                                <h5 class="card-title mt-3 mb-1">6_Attiny Motor DC- 2 Botones</h5>
+                                            </div>
+                                            <center>
+                                                <video width="60%" controls muted>
+                                                    <source src="videos/practica4_ej6.mp4" type="video/mp4">
+                                                </video>   
+                                            </center>                                 
+                                    
+                                            <center>
+                                                <iframe
+                                                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=text%2Fx-csrc&width=320&ds=true&dsyoff=22px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%252F%252F%2520Codigo%2520Attiny85%250A%252F%252F%250A%250Aint%2520flag%253D0%253B%250A%2520%2520%250Avoid%2520setup%28%29%250A%257B%250A%2520%2520pinMode%282%252C%2520OUTPUT%29%253B%250A%2520%2520pinMode%283%252C%2520INPUT%29%253B%250A%2520%2520pinMode%284%252C%2520INPUT%29%253B%250A%257D%250A%250Avoid%2520loop%28%29%250A%257B%250A%2520%2520if%28digitalRead%283%29%253D%253DHIGH%29%257B%250A%2520%2520%2520%2520flag%253D1%253B%250A%2520%2520%257D%250A%2520%2520%250A%2520%2520if%28digitalRead%284%29%253D%253DHIGH%29%257B%250A%2520%2520%2520%2520flag%253D0%253B%250A%2520%2520%257D%250A%2520%2520%250A%2520%2520if%28flag%253D%253D1%29%257B%250A%2520%2520%2520%2520digitalWrite%282%252C%2520HIGH%29%253B%250A%2520%2520%257D%250A%2520%2520else%257B%250A%2520%2520%2520%2520digitalWrite%282%252C%2520LOW%29%253B%250A%2520%2520%257D%250A%2520%2520%250A%2520%2520delay%28100%29%253B%250A%257D"
+                                                style="width: 320px; height: 400px; border:0; transform: scale(1); overflow:hidden;padding-bottom: 20px;"
+                                                sandbox="allow-scripts allow-same-origin">
+                                                </iframe>
+                                            </center>
+                                            
+                                        </div>
+                                    </div>
+
+                                    <!-- Ejemplo 7-->
+                                    <div class="col-lg-4 mb-5">
+                                        <div class="card h-100 shadow border-0">
+                                            <div class="card-body px-4">
+                                                <h5 class="card-title mt-3 mb-1">7_Attiny LED PWM</h5>
+                                            </div>
+                                            <center>
+                                                <video width="60%" controls muted>
+                                                    <source src="videos/practica4_ej7.mp4" type="video/mp4">
+                                                </video>   
+                                            </center>                                 
+                                    
+                                            <center>
+                                                <iframe
+                                                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=text%2Fx-csrc&width=320&ds=true&dsyoff=22px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%252F%252F%2520C%252B%252B%2520code%250A%252F*%250A%2520%2520Fade%250A%2520%2520This%2520example%2520shows%2520how%2520to%2520fade%2520an%2520LED%2520on%2520pin%25209%250A%2520%2520using%2520the%2520analogWrite%28%29%2520function.%250A%250A%2520%2520The%2520analogWrite%28%29%2520function%2520uses%2520PWM%252C%2520so%2520if%2520%2520you%250A%2520%2520want%2520to%2520change%2520the%2520pin%2520you%27re%2520using%252C%2520be%2520%2520sure%2520to%250A%2520%2520use%2520another%2520PWM%2520capable%2520pin.%2520On%2520most%2520%2520Arduino%252C%250A%2520%2520the%2520PWM%2520pins%2520are%2520identified%2520with%2520%2520%2520a%2520%2522%7E%2522%2520sign%252C%250A%2520%2520like%2520%7E3%252C%2520%7E5%252C%2520%7E6%252C%2520%7E9%252C%2520%7E10%2520and%2520%7E11.%250A*%252F%250A%250Aint%2520brightness%2520%253D%25200%253B%250A%250Avoid%2520setup%28%29%250A%257B%250A%2520%2520pinMode%280%252C%2520OUTPUT%29%253B%250A%257D%250A%250Avoid%2520loop%28%29%250A%257B%250A%2520%2520for%2520%28brightness%2520%253D%25200%253B%2520brightness%2520%253C%253D%2520255%253B%2520brightness%2520%252B%253D%25201%29%2520%257B%250A%2520%2520%2520%2520analogWrite%280%252C%2520brightness%29%253B%250A%2520%2520%2520%2520delay%285%29%253B%2520%252F%252F%2520Wait%2520for%2520100%2520millisecond%28s%29%250A%2520%2520%257D%250A%2520%2520for%2520%28brightness%2520%253D%2520255%253B%2520brightness%2520%253E%253D%25200%253B%2520brightness%2520-%253D%25201%29%2520%257B%250A%2520%2520%2520%2520analogWrite%280%252C%2520brightness%29%253B%250A%2520%2520%2520%2520delay%285%29%253B%2520%252F%252F%2520Wait%2520for%2520100%2520millisecond%28s%29%250A%2520%2520%257D%250A%257D"
+                                                style="width: 320px; height: 400px; border:0; transform: scale(1); overflow:hidden;padding-bottom: 20px;"
+                                                sandbox="allow-scripts allow-same-origin">
+                                                </iframe>
+                                            </center>
+                                        </div>
+                                    </div>
+
+                                    <!-- Ejemplo 8-->
+                                    <div class="col-lg-4 mb-5">
+                                        <div class="card h-100 shadow border-0">
+                                            <div class="card-body px-4">
+                                                <h5 class="card-title mt-3 mb-1">8_Attiny LED PWM - 2 Botones</h5>
+                                            </div>
+                                            <center>
+                                                <video width="60%" controls muted>
+                                                    <source src="videos/practica4_ej8.mp4" type="video/mp4">
+                                                </video>   
+                                            </center>                                 
+                                    
+                                            <center>
+                                                <iframe
+                                                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=text%2Fx-csrc&width=320&ds=true&dsyoff=22px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%252F%252F%2520C%252B%252B%2520PWM%2520%7E0%252C%2520%7E1%252C%2520%7E3%252C%2520%7E4%250A%250Aint%2520brightness%2520%253D%25200%253B%250A%250Avoid%2520setup%28%29%250A%257B%250A%2520%2520pinMode%280%252C%2520OUTPUT%29%253B%250A%257D%250A%250Avoid%2520loop%28%29%250A%257B%250A%2520%2520if%28digitalRead%283%29%253D%253DHIGH%29%257B%250A%2520%2520%2520%2520brightness%253Dbrightness%252B5%253B%250A%2520%2520%257D%250A%2520%2520%250A%2520%2520if%28digitalRead%284%29%253D%253DHIGH%29%257B%250A%2520%2520%2520%2520brightness%253Dbrightness-5%253B%250A%2520%2520%257D%250A%2520%2520%250A%2520%2520if%28brightness%253E255%29%257B%250A%2520%2520%2520%2520brightness%253D255%253B%250A%2520%2520%257D%250A%2520%2520%250A%2520%2520if%28brightness%253C0%29%257B%250A%2520%2520%2520%2520brightness%253D0%253B%250A%2520%2520%257D%250A%2520%2520%2520analogWrite%280%252C%2520brightness%29%253B%250A%2520%2520delay%28100%29%253B%250A%257D"
+                                                style="width: 320px; height: 400px; border:0; transform: scale(1); overflow:hidden;padding-bottom: 20px;"
+                                                sandbox="allow-scripts allow-same-origin">
+                                                </iframe>
+                                            </center>
+                                        </div>
+                                    </div>
+
+                                    <!-- Ejemplo 9-->
+                                    <div class="col-lg-4 mb-5">
+                                        <div class="card h-100 shadow border-0">
+                                            <div class="card-body px-4">
+                                                <h5 class="card-title mt-3 mb-1">9_Attiny Buzzer PWM</h5>
+                                            </div>
+                                            <center>
+                                                <video width="60%" controls muted>
+                                                    <source src="videos/practica4_ej9.mp4" type="video/mp4">
+                                                </video>   
+                                            </center>                                 
+                                    
+                                            <center>
+                                                <iframe
+                                                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=text%2Fx-csrc&width=320&ds=true&dsyoff=22px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%252F%252F%2520C%252B%252B%2520code%250A%252F*%250A%2520%2520Fade%250A%2520%2520This%2520example%2520shows%2520how%2520to%2520fade%2520an%2520LED%2520on%2520pin%25209%250A%2520%2520using%2520the%2520analogWrite%28%29%2520function.%250A%250A%2520%2520The%2520analogWrite%28%29%2520function%2520uses%2520PWM%252C%2520so%2520if%2520%2520you%250A%2520%2520want%2520to%2520change%2520the%2520pin%2520you%27re%2520using%252C%2520be%2520%2520sure%2520to%250A%2520%2520use%2520another%2520PWM%2520capable%2520pin.%2520On%2520most%2520%2520Arduino%252C%250A%2520%2520the%2520PWM%2520pins%2520are%2520identified%2520with%2520%2520%2520a%2520%2522%7E%2522%2520sign%252C%250A%2520%2520like%2520%7E3%252C%2520%7E5%252C%2520%7E6%252C%2520%7E9%252C%2520%7E10%2520and%2520%7E11.%250A*%252F%250A%250Aint%2520brightness%2520%253D%25200%253B%250A%250Avoid%2520setup%28%29%250A%257B%250A%2520%2520pinMode%280%252C%2520OUTPUT%29%253B%250A%257D%250A%250Avoid%2520loop%28%29%250A%257B%250A%2520%2520for%2520%28brightness%2520%253D%25200%253B%2520brightness%2520%253C%253D%2520255%253B%2520brightness%2520%252B%253D%25201%29%2520%257B%250A%2520%2520%2520%2520analogWrite%280%252C%2520brightness%29%253B%250A%2520%2520%2520%2520delay%28100%29%253B%2520%252F%252F%2520Wait%2520for%2520100%2520millisecond%28s%29%250A%2520%2520%257D%250A%2520%2520for%2520%28brightness%2520%253D%2520255%253B%2520brightness%2520%253E%253D%25200%253B%2520brightness%2520-%253D%25201%29%2520%257B%250A%2520%2520%2520%2520analogWrite%280%252C%2520brightness%29%253B%250A%2520%2520%2520%2520delay%28100%29%253B%2520%252F%252F%2520Wait%2520for%2520100%2520millisecond%28s%29%250A%2520%2520%257D%250A%257D"
+                                                style="width: 320px; height: 400px; border:0; transform: scale(1); overflow:hidden;padding-bottom: 20px;"
+                                                sandbox="allow-scripts allow-same-origin">
+                                                </iframe>
+                                            </center>
+                                        </div>
+                                    </div>
+
+                                    <!-- Ejemplo 10-->
+                                    <div class="col-lg-4 mb-5">
+                                        <div class="card h-100 shadow border-0">
+                                            <div class="card-body px-4">
+                                                <h5 class="card-title mt-3 mb-1">10_Attiny Buzzer PWM - 2 Botones</h5>
+                                            </div>
+                                            <center>
+                                                <video width="60%" controls muted>
+                                                    <source src="videos/practica4_ej10.mp4" type="video/mp4">
+                                                </video>   
+                                            </center>                                 
+                                    
+                                            <center>
+                                                <iframe
+                                                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=text%2Fx-csrc&width=320&ds=true&dsyoff=22px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%252F%252F%2520C%252B%252B%2520PWM%2520%7E0%252C%2520%7E1%252C%2520%7E3%252C%2520%7E4%250A%250Aint%2520brightness%2520%253D%25200%253B%250A%250Avoid%2520setup%28%29%250A%257B%250A%2520%2520pinMode%280%252C%2520OUTPUT%29%253B%250A%257D%250A%250Avoid%2520loop%28%29%250A%257B%250A%2520%2520if%28digitalRead%283%29%253D%253DHIGH%29%257B%250A%2520%2520%2520%2520brightness%253Dbrightness%252B5%253B%250A%2520%2520%257D%250A%2520%2520%250A%2520%2520if%28digitalRead%284%29%253D%253DHIGH%29%257B%250A%2520%2520%2520%2520brightness%253Dbrightness-5%253B%250A%2520%2520%257D%250A%2520%2520%250A%2520%2520if%28brightness%253E255%29%257B%250A%2520%2520%2520%2520brightness%253D255%253B%250A%2520%2520%257D%250A%2520%2520%250A%2520%2520if%28brightness%253C0%29%257B%250A%2520%2520%2520%2520brightness%253D0%253B%250A%2520%2520%257D%250A%2520%2520%2520analogWrite%280%252C%2520brightness%29%253B%250A%2520%2520delay%28100%29%253B%250A%257D"
+                                                style="width: 320px; height: 400px; border:0; transform: scale(1); overflow:hidden;padding-bottom: 20px;"
+                                                sandbox="allow-scripts allow-same-origin">
+                                                </iframe>
+                                            </center>
+                                        </div>
+                                    </div>
+
+                                    <!-- Ejemplo 11-->
+                                    <div class="col-lg-4 mb-5">
+                                        <div class="card h-100 shadow border-0">
+                                            <div class="card-body px-4">
+                                                <h5 class="card-title mt-3 mb-1">11_Attiny Motor DC PWM- 2 Botones</h5>
+                                            </div>
+                                            <center>
+                                                <video width="60%" controls muted>
+                                                    <source src="videos/practica4_ej11.mp4" type="video/mp4">
+                                                </video>   
+                                            </center>                                 
+                                    
+                                            <center>
+                                                <iframe
+                                                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=text%2Fx-csrc&width=320&ds=true&dsyoff=22px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%252F%252F%2520C%252B%252B%2520PWM%2520%7E0%252C%2520%7E1%252C%2520%7E3%252C%2520%7E4%250A%250Aint%2520brightness%2520%253D%25200%253B%250A%250Avoid%2520setup%28%29%250A%257B%250A%2520%2520pinMode%280%252C%2520OUTPUT%29%253B%250A%257D%250A%250Avoid%2520loop%28%29%250A%257B%250A%2520%2520if%28digitalRead%283%29%253D%253DHIGH%29%257B%250A%2520%2520%2520%2520brightness%253Dbrightness%252B5%253B%250A%2520%2520%257D%250A%2520%2520%250A%2520%2520if%28digitalRead%284%29%253D%253DHIGH%29%257B%250A%2520%2520%2520%2520brightness%253Dbrightness-5%253B%250A%2520%2520%257D%250A%2520%2520%250A%2520%2520if%28brightness%253E255%29%257B%250A%2520%2520%2520%2520brightness%253D255%253B%250A%2520%2520%257D%250A%2520%2520%250A%2520%2520if%28brightness%253C0%29%257B%250A%2520%2520%2520%2520brightness%253D0%253B%250A%2520%2520%257D%250A%2520%2520%2520analogWrite%280%252C%2520brightness%29%253B%250A%2520%2520delay%28100%29%253B%250A%257D"
+                                                style="width: 320px; height: 400px; border:0; transform: scale(1); overflow:hidden;padding-bottom: 20px;"
+                                                sandbox="allow-scripts allow-same-origin">
+                                                </iframe>
+                                            </center>
+                                        </div>
+                                    </div>
+
+                                    <!-- Ejemplo 12-->
+                                    <div class="col-lg-4 mb-5">
+                                        <div class="card h-100 shadow border-0">
+                                            <div class="card-body px-4">
+                                                <h5 class="card-title mt-3 mb-1">12_Attiny Servomotor</h5>
+                                            </div>
+                                            <center>
+                                                <video width="60%" controls muted>
+                                                    <source src="videos/practica4_ej12.mp4" type="video/mp4">
+                                                </video>   
+                                            </center>                                 
+                                    
+                                            <center>
+                                                <iframe
+                                                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=text%2Fx-csrc&width=320&ds=true&dsyoff=22px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=class%2520SoftwareServo%250A%257B%250A%2520%2520private%253A%250A%2520%2520%2520%2520uint8_t%2520pin%253B%250A%2520%2520%2520%2520uint8_t%2520angle%253B%2520%2520%2520%2520%2520%2520%2520%252F%252F%2520in%2520degrees%250A%2520%2520%2520%2520uint16_t%2520pulse0%253B%2520%2520%2520%2520%2520%252F%252F%2520pulse%2520width%2520in%2520TCNT0%2520counts%250A%2520%2520%2520%2520uint8_t%2520min16%253B%2520%2520%2520%2520%2520%2520%2520%252F%252F%2520minimum%2520pulse%252C%252016uS%2520units%2520%2520%28default%2520is%252034%29%250A%2520%2520%2520%2520uint8_t%2520max16%253B%2520%2520%2520%2520%2520%2520%2520%252F%252F%2520maximum%2520pulse%252C%252016uS%2520units%252C%25200-4ms%2520range%2520%28default%2520is%2520150%29%250A%2520%2520%2520%2520class%2520SoftwareServo%2520*next%253B%250A%2520%2520%2520%2520static%2520SoftwareServo*%2520first%253B%250A%2520%2520public%253A%250A%2520%2520%2520%2520SoftwareServo%28%29%253B%250A%2520%2520%2520%2520uint8_t%2520attach%28int%29%253B%2520%2520%2520%2520%2520%252F%252F%2520attach%2520to%2520a%2520pin%252C%2520sets%2520pinMode%252C%2520returns%25200%2520on%2520failure%252C%2520won%27t%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%252F%252F%2520position%2520the%2520servo%2520until%2520a%2520subsequent%2520write%28%29%2520happens%250A%2520%2520%2520%2520void%2520detach%28%29%253B%250A%2520%2520%2520%2520void%2520write%28int%29%253B%2520%2520%2520%2520%2520%2520%2520%2520%2520%252F%252F%2520specify%2520the%2520angle%2520in%2520degrees%252C%25200%2520to%2520180%250A%2520%2520%2520%2520uint8_t%2520read%28%29%253B%250A%2520%2520%2520%2520uint8_t%2520attached%28%29%253B%250A%2520%2520%2520%2520void%2520setMinimumPulse%28uint16_t%29%253B%2520%2520%252F%252F%2520pulse%2520length%2520for%25200%2520degrees%2520in%2520microseconds%252C%2520540uS%2520default%250A%2520%2520%2520%2520void%2520setMaximumPulse%28uint16_t%29%253B%2520%2520%252F%252F%2520pulse%2520length%2520for%2520180%2520degrees%2520in%2520microseconds%252C%25202400uS%2520default%250A%2520%2520%2520%2520static%2520void%2520refresh%28%29%253B%2520%2520%2520%2520%252F%252F%2520must%2520be%2520called%2520at%2520least%2520every%252050ms%2520or%2520so%2520to%2520keep%2520servo%2520alive%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%252F%252F%2520you%2520can%2520call%2520more%2520often%252C%2520it%2520won%27t%2520happen%2520more%2520than%2520once%2520every%252020ms%250A%257D%253B%250A%250ASoftwareServo%2520*SoftwareServo%253A%253Afirst%253B%250A%250A%2523define%2520NO_ANGLE%2520%280xff%29%250A%250ASoftwareServo%253A%253ASoftwareServo%28%29%2520%253A%2520pin%280%29%252Cangle%28NO_ANGLE%29%252Cpulse0%280%29%252Cmin16%2834%29%252Cmax16%28150%29%252Cnext%280%29%250A%257B%257D%250A%250Avoid%2520SoftwareServo%253A%253AsetMinimumPulse%28uint16_t%2520t%29%250A%257B%250A%2520%2520%2520%2520min16%2520%253D%2520t%252F16%253B%250A%257D%250A%250Avoid%2520SoftwareServo%253A%253AsetMaximumPulse%28uint16_t%2520t%29%250A%257B%250A%2520%2520%2520%2520max16%2520%253D%2520t%252F16%253B%250A%257D%250A%250Auint8_t%2520SoftwareServo%253A%253Aattach%28int%2520pinArg%29%250A%257B%250A%2520%2520%2520%2520pin%2520%253D%2520pinArg%253B%250A%2520%2520%2520%2520angle%2520%253D%2520NO_ANGLE%253B%250A%2520%2520%2520%2520pulse0%2520%253D%25200%253B%250A%2520%2520%2520%2520next%2520%253D%2520first%253B%250A%2520%2520%2520%2520first%2520%253D%2520this%253B%250A%2520%2520%2520%2520digitalWrite%28pin%252C0%29%253B%250A%2520%2520%2520%2520pinMode%28pin%252COUTPUT%29%253B%250A%2520%2520%2520%2520return%25201%253B%250A%257D%250A%250Avoid%2520SoftwareServo%253A%253Adetach%28%29%250A%257B%250A%2520%2520%2520%2520for%2520%28%2520SoftwareServo%2520**p%2520%253D%2520%2526first%253B%2520*p%2520%21%253D%25200%253B%2520p%2520%253D%2520%2526%28%28*p%29-%253Enext%29%2520%29%2520%257B%250A%2520%2520if%2520%28%2520*p%2520%253D%253D%2520this%29%2520%257B%250A%2520%2520%2520%2520%2520%2520*p%2520%253D%2520this-%253Enext%253B%250A%2520%2520%2520%2520%2520%2520this-%253Enext%2520%253D%25200%253B%250A%2520%2520%2520%2520%2520%2520return%253B%250A%2520%2520%257D%250A%2520%2520%2520%2520%257D%250A%257D%250A%250Avoid%2520SoftwareServo%253A%253Awrite%28int%2520angleArg%29%250A%257B%250A%2520%2520%2520%2520if%2520%28%2520angleArg%2520%253C%25200%29%2520angleArg%2520%253D%25200%253B%250A%2520%2520%2520%2520if%2520%28%2520angleArg%2520%253E%2520180%29%2520angleArg%2520%253D%2520180%253B%250A%2520%2520%2520%2520angle%2520%253D%2520angleArg%253B%250A%2520%2520%2520%2520%252F%252F%2520bleh%252C%2520have%2520to%2520use%2520longs%2520to%2520prevent%2520overflow%252C%2520cou"
+                                                style="width: 320px; height: 400px; border:0; transform: scale(1); overflow:hidden;padding-bottom: 20px;"
+                                                sandbox="allow-scripts allow-same-origin">
+                                                </iframe>
+                                            </center>
+                                        </div>
+                                    </div>
+
+                                     <!-- Ejemplo 13-->
+                                     <div class="col-lg-4 mb-5">
+                                        <div class="card h-100 shadow border-0">
+                                            <div class="card-body px-4">
+                                                <h5 class="card-title mt-3 mb-1">13_Attiny Servomotor - 2 Botones</h5>
+                                            </div>
+                                            <center>
+                                                <video width="60%" controls muted>
+                                                    <source src="videos/practica4_ej13.mp4" type="video/mp4">
+                                                </video>   
+                                            </center>                                 
+                                    
+                                            <center>
+                                                <iframe
+                                                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=text%2Fx-csrc&width=396.25&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=class%2520SoftwareServo%250A%257B%250A%2520%2520private%253A%250A%2520%2520%2520%2520uint8_t%2520pin%253B%250A%2520%2520%2520%2520uint8_t%2520angle%253B%2520%2520%2520%2520%2520%2520%2520%252F%252F%2520in%2520degrees%250A%2520%2520%2520%2520uint16_t%2520pulse0%253B%2520%2520%2520%2520%2520%252F%252F%2520pulse%2520width%2520in%2520TCNT0%2520counts%250A%2520%2520%2520%2520uint8_t%2520min16%253B%2520%2520%2520%2520%2520%2520%2520%252F%252F%2520minimum%2520pulse%252C%252016uS%2520units%2520%2520%28default%2520is%252034%29%250A%2520%2520%2520%2520uint8_t%2520max16%253B%2520%2520%2520%2520%2520%2520%2520%252F%252F%2520maximum%2520pulse%252C%252016uS%2520units%252C%25200-4ms%2520range%2520%28default%2520is%2520150%29%250A%2520%2520%2520%2520class%2520SoftwareServo%2520*next%253B%250A%2520%2520%2520%2520static%2520SoftwareServo*%2520first%253B%250A%2520%2520public%253A%250A%2520%2520%2520%2520SoftwareServo%28%29%253B%250A%2520%2520%2520%2520uint8_t%2520attach%28int%29%253B%2520%2520%2520%2520%2520%252F%252F%2520attach%2520to%2520a%2520pin%252C%2520sets%2520pinMode%252C%2520returns%25200%2520on%2520failure%252C%2520won%27t%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%252F%252F%2520position%2520the%2520servo%2520until%2520a%2520subsequent%2520write%28%29%2520happens%250A%2520%2520%2520%2520void%2520detach%28%29%253B%250A%2520%2520%2520%2520void%2520write%28int%29%253B%2520%2520%2520%2520%2520%2520%2520%2520%2520%252F%252F%2520specify%2520the%2520angle%2520in%2520degrees%252C%25200%2520to%2520180%250A%2520%2520%2520%2520uint8_t%2520read%28%29%253B%250A%2520%2520%2520%2520uint8_t%2520attached%28%29%253B%250A%2520%2520%2520%2520void%2520setMinimumPulse%28uint16_t%29%253B%2520%2520%252F%252F%2520pulse%2520length%2520for%25200%2520degrees%2520in%2520microseconds%252C%2520540uS%2520default%250A%2520%2520%2520%2520void%2520setMaximumPulse%28uint16_t%29%253B%2520%2520%252F%252F%2520pulse%2520length%2520for%2520180%2520degrees%2520in%2520microseconds%252C%25202400uS%2520default%250A%2520%2520%2520%2520static%2520void%2520refresh%28%29%253B%2520%2520%2520%2520%252F%252F%2520must%2520be%2520called%2520at%2520least%2520every%252050ms%2520or%2520so%2520to%2520keep%2520servo%2520alive%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%252F%252F%2520you%2520can%2520call%2520more%2520often%252C%2520it%2520won%27t%2520happen%2520more%2520than%2520once%2520every%252020ms%250A%257D%253B%250A%250ASoftwareServo%2520*SoftwareServo%253A%253Afirst%253B%250A%250A%2523define%2520NO_ANGLE%2520%280xff%29%250A%250ASoftwareServo%253A%253ASoftwareServo%28%29%2520%253A%2520pin%280%29%252Cangle%28NO_ANGLE%29%252Cpulse0%280%29%252Cmin16%2834%29%252Cmax16%28150%29%252Cnext%280%29%250A%257B%257D%250A%250Avoid%2520SoftwareServo%253A%253AsetMinimumPulse%28uint16_t%2520t%29%250A%257B%250A%2520%2520%2520%2520min16%2520%253D%2520t%252F16%253B%250A%257D%250A%250Avoid%2520SoftwareServo%253A%253AsetMaximumPulse%28uint16_t%2520t%29%250A%257B%250A%2520%2520%2520%2520max16%2520%253D%2520t%252F16%253B%250A%257D%250A%250Auint8_t%2520SoftwareServo%253A%253Aattach%28int%2520pinArg%29%250A%257B%250A%2520%2520%2520%2520pin%2520%253D%2520pinArg%253B%250A%2520%2520%2520%2520angle%2520%253D%2520NO_ANGLE%253B%250A%2520%2520%2520%2520pulse0%2520%253D%25200%253B%250A%2520%2520%2520%2520next%2520%253D%2520first%253B%250A%2520%2520%2520%2520first%2520%253D%2520this%253B%250A%2520%2520%2520%2520digitalWrite%28pin%252C0%29%253B%250A%2520%2520%2520%2520pinMode%28pin%252COUTPUT%29%253B%250A%2520%2520%2520%2520return%25201%253B%250A%257D%250A%250Avoid%2520SoftwareServo%253A%253Adetach%28%29%250A%257B%250A%2520%2520%2520%2520for%2520%28%2520SoftwareServo%2520**p%2520%253D%2520%2526first%253B%2520*p%2520%21%253D%25200%253B%2520p%2520%253D%2520%2526%28%28*p%29-%253Enext%29%2520%29%2520%257B%250A%2520%2520if%2520%28%2520*p%2520%253D%253D%2520this%29%2520%257B%250A%2520%2520%2520%2520%2520%2520*p%2520%253D%2520this-%253Enext%253B%250A%2520%2520%2520%2520%2520%2520this-%253Enext%2520%253D%25200%253B%250A%2520%2520%2520%2520%2520%2520return%253B%250A%2520%2520%257D%250A%2520%2520%2520%2520%257D%250A%257D%250A%250Avoid%2520SoftwareServo%253A%253Awrite%28int%2520angleArg%29%250A%257B%250A%2520%2520%2520%2520if%2520%28%2520angleArg%2520%253C%25200%29%2520angleArg%2520%253D%25200%253B%250A%2520%2520%2520%2520if%2520%28%2520angleArg%2520%253E%2520180%29%2520angleArg%2520%253D%2520180%253B%250A%2520%2520%2520%2520angle%2520%253D%2520angleArg%253B%250A%2520%2520%2520%2520%252F%252F%2520bleh%252C%2520have%2520to%2520use%2520longs%2520to%2520prevent%2520overflow%252C%2520cou"
+                                                style="width: 320px; height: 400px; border:0; transform: scale(1); overflow:hidden;padding-bottom: 20px;"
+                                                sandbox="allow-scripts allow-same-origin">
+                                                </iframe>
+                                            </center>
+                                        </div>
+                                    </div>
+
+                                    <!-- Ejemplo 14-->
+                                    <div class="col-lg-4 mb-5">
+                                        <div class="card h-100 shadow border-0">
+                                            <div class="card-body px-4">
+                                                <h5 class="card-title mt-3 mb-1">14_Attiny Neopixel</h5>
+                                            </div>
+                                            <center>
+                                                <video width="60%" controls muted>
+                                                    <source src="videos/practica4_ej14.mp4" type="video/mp4">
+                                                </video>   
+                                            </center>                                 
+                                    
+                                            <center>
+                                                <iframe
+                                                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=text%2Fx-csrc&width=396.25&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2523include%2520%253CAdafruit_NeoPixel.h%253E%250A%2523define%2520PIN%25200%2509%2520%252F%252F%2520input%2520pin%2520Neopixel%2520is%2520attached%2520to%250A%2523define%2520NUMPIXELS%2520%2520%2520%2520%2520%25201%2520%252F%252F%2520number%2520of%2520neopixels%2520in%2520strip%250A%250AAdafruit_NeoPixel%2520pixels%2520%253D%2520Adafruit_NeoPixel%28NUMPIXELS%252C%2520PIN%252C%2520NEO_GRB%2520%252B%2520NEO_KHZ800%29%253B%250A%250Aint%2520delayval%2520%253D%2520100%253B%2520%252F%252F%2520timing%2520delay%2520in%2520milliseconds%250A%250Avoid%2520setup%28%29%2520%257B%250A%2520%2520%252F%252F%2520Initialize%2520the%2520NeoPixel%2520library.%250A%2520%2520pixels.begin%28%29%253B%250A%257D%250A%250Avoid%2520loop%28%29%2520%257B%250A%250A%2520%2520pixels.setPixelColor%280%252C%2520pixels.Color%28255%252C%25200%252C%25200%29%29%253B%2520%252F%252F%2520pixels.Color%2520takes%2520RGB%2520values%252C%2520from%25200%252C0%252C0%2520up%2520to%2520255%252C255%252C255%250A%2520%2520pixels.show%28%29%253B%2520%252F%252F%2520This%2520sends%2520the%2520updated%2520pixel%2520color%2520to%2520the%2520hardware.%250A%2520%2520delay%281000%29%253B%250A%2520%2520%250A%2520%2520pixels.setPixelColor%280%252C%2520pixels.Color%280%252C%2520255%252C%25200%29%29%253B%2520%252F%252F%2520pixels.Color%2520takes%2520RGB%2520values%252C%2520from%25200%252C0%252C0%2520up%2520to%2520255%252C255%252C255%250A%2520%2520pixels.show%28%29%253B%2520%252F%252F%2520This%2520sends%2520the%2520updated%2520pixel%2520color%2520to%2520the%2520hardware.%250A%2520%2520delay%281000%29%253B%250A%2520%2520%250A%2520%2520pixels.setPixelColor%280%252C%2520pixels.Color%280%252C%25200%252C%2520255%29%29%253B%2520%252F%252F%2520pixels.Color%2520takes%2520RGB%2520values%252C%2520from%25200%252C0%252C0%2520up%2520to%2520255%252C255%252C255%250A%2520%2520pixels.show%28%29%253B%2520%252F%252F%2520This%2520sends%2520the%2520updated%2520pixel%2520color%2520to%2520the%2520hardware.%250A%2520%2520delay%281000%29%253B%250A%2520%2520%250A%257D"
+                                                style="width: 320px; height: 400px; border:0; transform: scale(1); overflow:hidden;padding-bottom: 20px;"
+                                                sandbox="allow-scripts allow-same-origin">
+                                                </iframe>
+                                            </center>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Ejemplo 15-->
+                                    <div class="col-lg-4 mb-5">
+                                        <div class="card h-100 shadow border-0">
+                                            <div class="card-body px-4">
+                                                <h5 class="card-title mt-3 mb-1">15_Attiny Neopixel - 2 Botones</h5>
+                                            </div>
+                                            <center>
+                                                <video width="60%" controls muted>
+                                                    <source src="videos/practica4_ej15.mp4" type="video/mp4">
+                                                </video>   
+                                            </center>                                 
+                                    
+                                            <center>
+                                                <iframe
+                                                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=text%2Fx-csrc&width=396.25&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2523include%2520%253CAdafruit_NeoPixel.h%253E%250A%2523define%2520PIN%25200%2509%2520%252F%252F%2520input%2520pin%2520Neopixel%2520is%2520attached%2520to%250A%2523define%2520NUMPIXELS%2520%2520%2520%2520%2520%25201%2520%252F%252F%2520number%2520of%2520neopixels%2520in%2520strip%250A%250AAdafruit_NeoPixel%2520pixels%2520%253D%2520Adafruit_NeoPixel%28NUMPIXELS%252C%2520PIN%252C%2520NEO_GRB%2520%252B%2520NEO_KHZ800%29%253B%250A%250Aint%2520delayval%2520%253D%2520100%253B%2520%252F%252F%2520timing%2520delay%2520in%2520milliseconds%250Aint%2520contador%253D0%253B%250A%250Avoid%2520setup%28%29%2520%257B%250A%2520%2520%252F%252F%2520Initialize%2520the%2520NeoPixel%2520library.%250A%2520%2520pixels.begin%28%29%253B%250A%257D%250A%250Avoid%2520loop%28%29%2520%257B%250A%2520%2520%250A%2520%2520%2520%2520if%28digitalRead%283%29%253D%253DHIGH%29%257B%250A%2520%2520%2520%2520contador%252B%252B%253B%250A%2520%2520%257D%250A%2520%2520%250A%2520%2520if%28digitalRead%284%29%253D%253DHIGH%29%257B%250A%2520%2520%2520%2520contador--%253B%250A%2520%2520%257D%250A%2520%2520%250A%2520%2520if%28contador%253E7%29%257B%250A%2520%2520%2520%2520contador%253D7%253B%250A%2520%2520%257D%250A%2520%2520%250A%2520%2520if%28contador%253C0%29%257B%250A%2520%2520%2520%2520contador%253D0%253B%250A%2520%2520%257D%250A%2520%2520%250A%2520%2520if%28contador%253D%253D0%29%257B%250A%2520%2520%2509pixels.setPixelColor%280%252C%2520pixels.Color%280%252C%25200%252C%25200%29%29%253B%2520%252F%252F%2520pixels.Color%2520takes%2520RGB%2520values%252C%2520from%25200%252C0%252C0%2520up%2520to%2520255%252C255%252C255%250A%2520%2520%2509pixels.show%28%29%253B%2520%252F%252F%2520This%2520sends%2520the%2520updated%2520pixel%2520color%2520to%2520the%2520hardware.%250A%2520%2520%257D%250A%2520%2520else%2520if%28contador%253D%253D1%29%257B%2520%2520%2520%2520%252F%252FROJO%250A%2520%2520%2509pixels.setPixelColor%280%252C%2520pixels.Color%28255%252C%25200%252C%25200%29%29%253B%2520%252F%252F%2520pixels.Color%2520takes%2520RGB%2520values%252C%2520from%25200%252C0%252C0%2520up%2520to%2520255%252C255%252C255%250A%2520%2520%2509pixels.show%28%29%253B%2520%252F%252F%2520This%2520sends%2520the%2520updated%2520pixel%2520color%2520to%2520the%2520hardware.%250A%250A%2520%2520%257D%250A%2520%2520else%2520if%28contador%253D%253D2%29%257B%250A%2520%2520%2509pixels.setPixelColor%280%252C%2520pixels.Color%280%252C%2520255%252C%25200%29%29%253B%2520%252F%252F%2520pixels.Color%2520takes%2520RGB%2520values%252C%2520from%25200%252C0%252C0%2520up%2520to%2520255%252C255%252C255%250A%2520%2520%2509pixels.show%28%29%253B%2520%252F%252F%2520This%2520sends%2520the%2520updated%2520pixel%2520color%2520to%2520the%2520hardware.%250A%2520%2520%257D%250A%2520%2520else%2520if%28contador%253D%253D3%29%257B%250A%2520%2520%2509pixels.setPixelColor%280%252C%2520pixels.Color%280%252C%25200%252C%2520255%29%29%253B%2520%252F%252F%2520pixels.Color%2520takes%2520RGB%2520values%252C%2520from%25200%252C0%252C0%2520up%2520to%2520255%252C255%252C255%250A%2520%2520%2509pixels.show%28%29%253B%2520%252F%252F%2520This%2520sends%2520the%2520updated%2520pixel%2520color%2520to%2520the%2520hardware.%250A%2520%2520%257D%250A%2520%2520else%2520if%28contador%253D%253D4%29%257B%250A%2509pixels.setPixelColor%280%252C%2520pixels.Color%280%252C%2520255%252C%2520255%29%29%253B%2520%252F%252F%2520pixels.Color%2520takes%2520RGB%2520values%252C%2520from%25200%252C0%252C0%2520up%2520to%2520255%252C255%252C255%250A%2520%2520%2509pixels.show%28%29%253B%2520%252F%252F%2520This%2520sends%2520the%2520updated%2520pixel%2520color%2520to%2520the%2520hardware.%250A%2520%2520%257D%250A%2520%2520else%2520if%28contador%253D%253D5%29%257B%250A%2509pixels.setPixelColor%280%252C%2520pixels.Color%28255%252C%2520255%252C%25200%29%29%253B%2520%252F%252F%2520pixels.Color%2520takes%2520RGB%2520values%252C%2520from%25200%252C0%252C0%2520up%2520to%2520255%252C255%252C255%250A%2520%2520%2509pixels.show%28%29%253B%2520%252F%252F%2520This%2520sends%2520the%2520updated%2520pixel%2520color%2520to%2520the%2520hardware.%250A%2520%2520%257D%250A%2520%2520else%2520if%28contador%253D%253D6%29%257B%250A%2509pixels.setPixelColor%280%252C%2520pixels.Color%28255%252C%25200%252C%2520255%29%29%253B%2520%252F%252F%2520pixels.Color%2520takes%2520RGB%2520values%252C%2520from%25200%252C0%252C0%2520up%2520to%2520255%252C255%252C255%250A%2520%2520%2509pixels.show%28%29%253B%2520%252F%252F%2520This%2520sends%2520the%2520updated%2520pixel%2520color%2520to%2520the%2520hardware.%250A%2520%2520%257D%250A%2520%2520else%2520if%28contador%253D%253D7%29%257B%250A%2509pixels.setPixelColor%280%252C%2520pixels.Color%28255%252C%2520255%252C%2520255%29%29%253B%2520%252F%252F%2520pixels.Color%2520takes%2520RGB%2520values%252C%2520from%25200%252C0%252C0%2520up%2520to%2520255%252C255%252C255%250A%2520%2520%2509pixels.show%28%29%253B%2520%252F%252F%2520This%2520sends%2520the%2520updated%2520pixel%2520color%2520to%2520the%2520hardware.%250A%2520%2520%257D%250A%2520%2520%250A%2520%2520delay%28500%29%253B%250A%257D"
+                                                style="width: 320px; height: 400px; border:0; transform: scale(1); overflow:hidden;padding-bottom: 20px;"
+                                                sandbox="allow-scripts allow-same-origin">
+                                                </iframe>
+                                            </center>
+                                        </div>
+                                    </div>
+
+                                    <!-- Ejemplo 16-->
+                                    <div class="col-lg-4 mb-5">
+                                        <div class="card h-100 shadow border-0">
+                                            <div class="card-body px-4">
+                                                <h5 class="card-title mt-3 mb-1">16_Attiny Neopixel Tira x 5 - 2 Botones</h5>
+                                            </div>
+                                            <center>
+                                                <video width="60%" controls muted>
+                                                    <source src="videos/practica4_ej16.mp4" type="video/mp4">
+                                                </video>   
+                                            </center>                                 
+                                    
+                                            <center>
+                                                <iframe
+                                                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=text%2Fx-csrc&width=396.25&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2523include%2520%253CAdafruit_NeoPixel.h%253E%250A%2523define%2520PIN%25200%2509%2520%252F%252F%2520input%2520pin%2520Neopixel%2520is%2520attached%2520to%250A%2523define%2520NUMPIXELS%2520%2520%2520%2520%2520%25205%2520%252F%252F%2520number%2520of%2520neopixels%2520in%2520strip%250A%250AAdafruit_NeoPixel%2520pixels%2520%253D%2520Adafruit_NeoPixel%28NUMPIXELS%252C%2520PIN%252C%2520NEO_GRB%2520%252B%2520NEO_KHZ800%29%253B%250A%250Aint%2520delayval%2520%253D%2520100%253B%2520%252F%252F%2520timing%2520delay%2520in%2520milliseconds%250A%250Avoid%2520setup%28%29%2520%257B%250A%2520%2520%252F%252F%2520Initialize%2520the%2520NeoPixel%2520library.%250A%2520%2520pixels.begin%28%29%253B%250A%257D%250A%250Avoid%2520loop%28%29%2520%257B%250A%2520%2520%250A%2520%2520pixels.setPixelColor%280%252C%2520pixels.Color%280%252C%25200%252C%25200%29%29%253B%2520%252F%252F%2520pixels.Color%2520takes%2520RGB%2520values%252C%2520from%25200%252C0%252C0%2520up%2520to%2520255%252C255%252C255%250A%2520%2520pixels.setPixelColor%281%252C%2520pixels.Color%280%252C%25200%252C%25200%29%29%253B%2520%252F%252F%2520pixels.Color%2520takes%2520RGB%2520values%252C%2520from%25200%252C0%252C0%2520up%2520to%2520255%252C255%252C255%250A%2520%2520pixels.setPixelColor%282%252C%2520pixels.Color%280%252C%25200%252C%25200%29%29%253B%2520%252F%252F%2520pixels.Color%2520takes%2520RGB%2520values%252C%2520from%25200%252C0%252C0%2520up%2520to%2520255%252C255%252C255%250A%2520%2520pixels.setPixelColor%283%252C%2520pixels.Color%280%252C%25200%252C%25200%29%29%253B%2520%252F%252F%2520pixels.Color%2520takes%2520RGB%2520values%252C%2520from%25200%252C0%252C0%2520up%2520to%2520255%252C255%252C255%250A%2520%2520pixels.setPixelColor%284%252C%2520pixels.Color%280%252C%25200%252C%25200%29%29%253B%2520%252F%252F%2520pixels.Color%2520takes%2520RGB%2520values%252C%2520from%25200%252C0%252C0%2520up%2520to%2520255%252C255%252C255%250A%2520%2520pixels.show%28%29%253B%2520%252F%252F%2520This%2520sends%2520the%2520updated%2520pixel%2520color%2520to%2520the%2520hardware.%250A%2520%2520delay%28500%29%253B%250A%2520%2520%250A%2520%2520pixels.setPixelColor%280%252C%2520pixels.Color%28255%252C%25200%252C%25200%29%29%253B%2520%252F%252F%2520pixels.Color%2520takes%2520RGB%2520values%252C%2520from%25200%252C0%252C0%2520up%2520to%2520255%252C255%252C255%250A%2520%2520pixels.setPixelColor%281%252C%2520pixels.Color%280%252C%25200%252C%25200%29%29%253B%2520%252F%252F%2520pixels.Color%2520takes%2520RGB%2520values%252C%2520from%25200%252C0%252C0%2520up%2520to%2520255%252C255%252C255%250A%2520%2520pixels.setPixelColor%282%252C%2520pixels.Color%280%252C%25200%252C%25200%29%29%253B%2520%252F%252F%2520pixels.Color%2520takes%2520RGB%2520values%252C%2520from%25200%252C0%252C0%2520up%2520to%2520255%252C255%252C255%250A%2520%2520pixels.setPixelColor%283%252C%2520pixels.Color%280%252C%25200%252C%25200%29%29%253B%2520%252F%252F%2520pixels.Color%2520takes%2520RGB%2520values%252C%2520from%25200%252C0%252C0%2520up%2520to%2520255%252C255%252C255%250A%2520%2520pixels.setPixelColor%284%252C%2520pixels.Color%280%252C%25200%252C%25200%29%29%253B%2520%252F%252F%2520pixels.Color%2520takes%2520RGB%2520values%252C%2520from%25200%252C0%252C0%2520up%2520to%2520255%252C255%252C255%250A%2520%2520pixels.show%28%29%253B%2520%252F%252F%2520This%2520sends%2520the%2520updated%2520pixel%2520color%2520to%2520the%2520hardware.%250A%2520%2520delay%28500%29%253B%250A%2520%2520%250A%2520%2520pixels.setPixelColor%280%252C%2520pixels.Color%28255%252C%25200%252C%25200%29%29%253B%2520%252F%252F%2520pixels.Color%2520takes%2520RGB%2520values%252C%2520from%25200%252C0%252C0%2520up%2520to%2520255%252C255%252C255%250A%2520%2520pixels.setPixelColor%281%252C%2520pixels.Color%28255%252C%25200%252C%25200%29%29%253B%2520%252F%252F%2520pixels.Color%2520takes%2520RGB%2520values%252C%2520from%25200%252C0%252C0%2520up%2520to%2520255%252C255%252C255%250A%2520%2520pixels.setPixelColor%282%252C%2520pixels.Color%280%252C%25200%252C%25200%29%29%253B%2520%252F%252F%2520pixels.Color%2520takes%2520RGB%2520values%252C%2520from%25200"
+                                                style="width: 320px; height: 400px; border:0; transform: scale(1); overflow:hidden;padding-bottom: 20px;"
+                                                sandbox="allow-scripts allow-same-origin">
+                                                </iframe>
+                                            </center>
+                                        </div>
+                                    </div>
+
+                                    <!-- Ejemplo 17-->
+                                    <div class="col-lg-4 mb-5">
+                                        <div class="card h-100 shadow border-0">
+                                            <div class="card-body px-4">
+                                                <h5 class="card-title mt-3 mb-1">17_Attiny Neopixel Tira x 5 - 2 Botones</h5>
+                                            </div>
+                                            <center>
+                                                <video width="60%" controls muted>
+                                                    <source src="videos/practica4_ej17.mp4" type="video/mp4">
+                                                </video>   
+                                            </center>                                 
+                                    
+                                            <center>
+                                                <iframe
+                                                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=text%2Fx-csrc&width=396.25&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2523include%2520%253CAdafruit_NeoPixel.h%253E%250A%2523define%2520PIN%25200%2509%2520%252F%252F%2520input%2520pin%2520Neopixel%2520is%2520attached%2520to%250A%2523define%2520NUMPIXELS%2520%2520%2520%2520%2520%25205%2520%252F%252F%2520number%2520of%2520neopixels%2520in%2520strip%250A%250AAdafruit_NeoPixel%2520pixels%2520%253D%2520Adafruit_NeoPixel%28NUMPIXELS%252C%2520PIN%252C%2520NEO_GRB%2520%252B%2520NEO_KHZ800%29%253B%250A%250Aint%2520delayval%2520%253D%2520100%253B%2520%252F%252F%2520timing%2520delay%2520in%2520milliseconds%250Aint%2520contador%253D0%253B%250A%250Avoid%2520setup%28%29%2520%257B%250A%2520%2520%252F%252F%2520Initialize%2520the%2520NeoPixel%2520library.%250A%2520%2520pixels.begin%28%29%253B%250A%257D%250A%250Avoid%2520loop%28%29%2520%257B%250A%2520%2520%250A%2520%2520%2520%2520if%28digitalRead%283%29%253D%253DHIGH%29%257B%250A%2520%2520%2520%2520contador%252B%252B%253B%250A%2520%2520%257D%250A%2520%2520%250A%2520%2520if%28digitalRead%284%29%253D%253DHIGH%29%257B%250A%2520%2520%2520%2520contador--%253B%250A%2520%2520%257D%250A%2520%2520%250A%2520%2520if%28contador%253E5%29%257B%250A%2520%2520%2520%2520contador%253D5%253B%250A%2520%2520%257D%250A%2520%2520%250A%2520%2520if%28contador%253C0%29%257B%250A%2520%2520%2520%2520contador%253D0%253B%250A%2520%2520%257D%250A%2520%2520%250A%2520%2520if%28contador%253D%253D0%29%257B%250A%2520%2520%2509pixels.setPixelColor%280%252C%2520pixels.Color%280%252C%25200%252C%25200%29%29%253B%2520%252F%252F%2520pixels.Color%2520takes%2520RGB%2520values%252C%2520from%25200%252C0%252C0%2520up%2520to%2520255%252C255%252C255%250A%2520%2520%2509pixels.setPixelColor%281%252C%2520pixels.Color%280%252C%25200%252C%25200%29%29%253B%250A%2520%2520%2520%2520pixels.setPixelColor%282%252C%2520pixels.Color%280%252C%25200%252C%25200%29%29%253B%250A%2520%2520%2520%2520pixels.setPixelColor%283%252C%2520pixels.Color%280%252C%25200%252C%25200%29%29%253B%250A%2520%2520%2520%2520pixels.setPixelColor%284%252C%2520pixels.Color%280%252C%25200%252C%25200%29%29%253B%250A%2520%2520%2520%2520pixels.show%28%29%253B%2520%252F%252F%2520This%2520sends%2520the%2520updated%2520pixel%2520color%2520to%2520the%2520hardware.%250A%2520%2520%257D%250A%2520%2520else%2520if%28contador%253D%253D1%29%257B%2520%2520%2520%2520%252F%252FROJO%250A%2520%2520%2509pixels.setPixelColor%280%252C%2520pixels.Color%28255%252C%25200%252C%25200%29%29%253B%2520%252F%252F%2520pixels.Color%2520takes%2520RGB%2520values%252C%2520from%25200%252C0%252C0%2520up%2520to%2520255%252C255%252C255%250A%2520%2520%2509pixels.setPixelColor%281%252C%2520pixels.Color%280%252C%25200%252C%25200%29%29%253B%250A%2520%2520%2520%2520pixels.setPixelColor%282%252C%2520pixels.Color%280%252C%25200%252C%25200%29%29%253B%250A%2520%2520%2520%2520pixels.setPixelColor%283%252C%2520pixels.Color%280%252C%25200%252C%25200%29%29%253B%250A%2520%2520%2520%2520pixels.setPixelColor%284%252C%2520pixels.Color%280%252C%25200%252C%25200%29%29%253B%250A%2520%2520%2520%2520pixels.show%28%29%253B%2520%252F%252F%2520This%2520sends%2520the%2520updated%2520pixel%2520color%2520to%2520the%2520hardware.%250A%250A%2520%2520%257D%250A%2520%2520else%2520if%28contador%253D%253D2%29%257B%250A%2520%2520%2509pixels.setPixelColor%280%252C%2520pixels.Color%28255%252C%25200%252C%25200%29%29%253B%2520%252F%252F%2520pixels.Color%2520takes%2520RGB%2520values%252C%2520from%25200%252C0%252C0%2520up%2520to%2520255%252C255%252C255%250A%2520%2520%2509pixels.setPixelColor%281%252C%2520pixels.Color%28255%252C%25200%252C%25200%29%29%253B%250A%2520%2520%2520%2520pixels.setPixelColor%282%252C%2520pixels.Color%280%252C%25200%252C%25200%29%29%253B%250A%2520%2520%2520%2520pixels.setPixelColor%283%252C%2520pixels.Color%280%252C%25200%252C%25200%29%29%253B%250A%2520%2520%2520%2520pixels.setPixelColor%284%252C%2520pixels.Color%280%252C%25200%252C%25200%29%29%253B%250A%2520%2520%2520%2520pixels.show%28%29%253B%2520%252F%252F%2520This%2520sends%2520the%2520updated%2520pixel%2520color%2520to%2520the%2520hardware.%250A%2520%2520%257D%250A%2520%2520else%2520if%28contador%253D%253D3%29%257B%250A%2520%2520%2509pixels.setPixelColor%280%252C%2520pixels.Color%28255%252C%25200%252C%25200%29%29%253B%2520%252F%252F%2520pixels.Color%2520takes%2520RGB%2520values%252C%2520from%25200%252C0%252C0%2520up%2520to%2520255%252C255%252C255%250A%2520%2520%2509pixe"
+                                                style="width: 320px; height: 400px; border:0; transform: scale(1); overflow:hidden;padding-bottom: 20px;"
+                                                sandbox="allow-scripts allow-same-origin">
+                                                </iframe>
+                                            </center>
+                                        </div>
+                                    </div>
+                            </div>
+                        </section>
+
+                        <p id="conclusiones">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Conclusiones -</h2>
+                        <p class="fs-6 mb-4">Se logró comprender los principios básicos del ATTINY, y se ejecutaron de forma correcta las simulaciones.</p>                        
+
+                        <p id="referencias">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Referencias -</h2>
+                        <p class="fs-6 mb-4">Xataka (2022), "Qué es Arduino, cómo funciona y qué puedes hacer con uno". Extraido el 28/08/23 de 
+                                            https://www.xataka.com/basics/que-arduino-como-funciona-que-puedes-hacer-uno</p>
+                        <p class="fs-6 mb-4">Aquae (2023), ¿Sabes qué es un Arduino y para qué sirve?. Extraido el 28/08/23 de 
+                                            https://www.fundacionaquae.org/wiki/sabes-arduino-sirve/</p>
+                        
+                        <!-- <p id="descargables">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Descargables -</h2>
+                        <p class="fs-6 mb-4">Descargar documento PDF: <a href="files/Documento.pdf">documento.pdf</a> </p>
+                        <p class="fs-6 mb-4">Descargar codigo Arduino: <a href="files/Ejemplo_arduino_bluetooth.ino">codigo.ino</a> </p>
+                        <p class="fs-6 mb-4">Descargar Archivo 3d .STL: <a href="files/Pieza_3D.STL">pieza.stl</a> </p> -->
+                </div>
+            </section>
+
+            
+        </main>
+
+        <!-- Footer-->
+        <footer class="bg-dark py-4 mt-auto">
+            <div class="container px-5">
+                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                    <div class="col-auto"><div class="small m-0 text-white">Copyright &copy; Ingenierias-iberopuebla.mx 2023</div></div>
+                    <div class="col-auto">
+                        <a class="link-light small" href="#!">Privacy</a>
+                        <span class="text-white mx-1">&middot;</span>
+                        <a class="link-light small" href="#!">Terms</a>
+                        <span class="text-white mx-1">&middot;</span>
+                        <a class="link-light small" href="#!">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
