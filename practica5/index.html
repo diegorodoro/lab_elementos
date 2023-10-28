@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Práctica 5 | Ibero Puebla</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body class="d-flex flex-column h-100">
+        <main class="flex-shrink-0">
+            <!-- Navigation-->
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+                <div class="container px-5">
+                    <a class="navbar-brand">Menu</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>                    
+                            <li class="nav-item"><a class="nav-link" href="../index.html#resumen">Acerca de mi</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../index.html#practicas">Prácticas</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- Seccion TITULO de Portafolio-->
+            <header class="bg-primary py-2 mt-6">
+                <div class="container px-5">
+                    <div class="row gx-5 align-items-center justify-content-center">
+                        <div class="col-lg-8 col-xl-7 col-xxl-6">
+                            <div class="my-5 text-center text-xl-start">
+                                <h1 class="display-6 fw-bolder text-white mb-2">Portafolio de Actividades</h1>
+                                <h1 class="display-8 fw-bolder text-white mb-2">Laboratorio de Elementos Programables</h1>
+                                <p id="resumen" class="display-8 fw-normal text-white-50 mb-4">Departamento de Ciencias e Ingenierías | Universidad Iberoamericana Puebla, México.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Seccion TITULO de la Práctica-->
+            <section class="py-3" id="scroll-target">
+                <div class="container px-5 my-2">
+                    <!-- Post header-->
+                    <header class="mb-4">
+                        <!-- Post title-->
+                        <h1 class="fw-bolder mb-1">Práctica 5: Pantalla OLED</h1>
+
+                        <!-- ETIQUETA DE ALUMNO (Hacer una por cada alumno)-->
+                        <img class="img-fluid rounded-circle" width="50px" src="../assets/diego.png" alt="..." />
+                        <div class="ms-2">
+                            <div class="fw-bold">Diego Rodríguez Orozco</div>
+                            <div class="text-muted">Ing. Sistemas Computacionales</div>
+                            </div>
+                        <!--Aqui termina etiqueta de alumno-->
+
+                        <div class="text-muted fst-italic mt-2 mb-2">Fecha: Octubre 19, 2023</div>
+                        <!-- ETIQUETAS O TOPICOS IMPORTANTES DE LA PRACTICA-->
+                        <a class="badge bg-primary text-decoration-none link-light" >ATTINY</a>
+                        <a class="badge bg-primary text-decoration-none link-light" >Electrónica</a>
+
+                    </header>
+                </div>
+            </section>
+
+            <!-- Seccion de CONTENIDO de la Práctica-->
+            <section>
+                <div class="container px-5">
+
+                    <figure class="mb-4"><img class="img-fluid rounded" width="600" src="img/oled.jpg" /></figure>
+                                
+                    <p id="resumen">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Resumen -</h2>
+                        <p class="fs-6 mb-4">Para esta practica, con el ATTINY, se utilizó un modulo del arduino que es la pantalla OLED,
+                            capaz de mostrar información que queramos. En este caso, que cuando se presione un botón, se muestre la panatalla la palabra On y si no 
+                            se presiona, que se muestre la palabra OFF.
+                        </p>
+                        
+                        <p id="intro">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Introducción -</h2>
+                        <p class="fs-6 mb-4">
+                            Las pantallas OLED se componen de píxeles individuales que emiten su propia luz cuando se 
+                            les aplica una corriente eléctrica. Esto significa que no necesitan retroiluminación, como las pantallas LCD convencionales, lo que las hace más delgadas y eficientes energéticamente. Además, los píxeles en una pantalla OLED pueden encenderse y apagarse de forma independiente, lo que permite lograr negros verdaderos y colores vivos, lo que las hace ideales para la representación de imágenes y texto.</p>                        
+                        <p id="materiales">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Materiales -</h2>
+                        <ul>
+                            <li>
+                                <p class="fs-6 mb-4">Protoboard</p>
+                            </li>
+                            <li>
+                                <p class="fs-6 mb-4">Arduino Uno</p>
+                            </li>
+                            <li>
+                                <p class="fs-6 mb-4">Pantalla OLED</p>
+                            </li>
+                            <li>
+                                <p class="fs-6 mb-4">Botón push down</p>
+                            </li>
+                        </ul>
+                        
+                        <p id="desarrollo">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Desarrollo -</h2>
+                        <p class="fs-6 mb-4">
+                            Para el desarrollo de esta práctica, fue necesario primero aprender a usar la pantalla por medio de la simulación en WOWKI, donde
+                            se aprendió a manipular y mostrar la información con el manejo de sus pixeles de forma que se logró exitosamente seguir con el plan
+                            que se estipuló en el objetivo. Ya que se logró finalizar con la simulación, se implemento la pantalla con su conexión
+                            como corresponde, y se incluyeron dos botones push down, al presionar uno, indicaria la pantalla la palabra OFF
+                            y al presionar el otro, la palabra ON
+                        </p>
+                        
+                        
+                            <p id="simulacion">
+                            <h1 class="fw-bolder2 mb-4 mt-5 fs-5">Simulación</h1>
+                            <p class="fs-6 mb-4">Se simularon los circuitos en WOKWI.</p>
+                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="800" src="img/simulacion.png" alt="..." /></figure>
+                    
+                        <p id="resultados">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Resultados -</h2>
+                            <p class="fs-6 mb-4">Después de analizar la simulación, se ejecutó de forma correcta los circuitos con la funcionalidad requerida.</p>
+                        
+                        <section id="practicas">
+                            <div class="container px-5 my-2">
+                                <div class="row gx-5">
+                                    <center>
+                                        <video width="20%" controls muted muted>
+                                        <source src="videos/practica5.mp4" type="video/mp4">
+                                        </video>   
+                                    </center>                                
+
+                                    <center>
+                                        <iframe
+                                            src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=text%2Fx-csrc&width=643.75&ds=true&dsyoff=0px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2523include%2520%253CTinyWireM.h%253E%250A%2523include%2520%253CTiny4kOLED.h%253E%250A%250A%2523define%2520pwmPin%2520%25203%2520%2520%2509%252F%252F%2520digital%2520PWM%2520pin%25209%2520-%2520SAIDA%250A%2523define%2520enPin%2520%2520%25204%2520%2520%2520%252F%252F%2520habiita%2520sinais%2520PWM%250A%250Avoid%2520prepareDisplay%28%29%2520%257B%250A%2520%2520oled.clear%28%29%253B%250A%2520%2520oled.begin%28%29%253B%250A%2520%2520oled.setFont%28FONT6X8%29%253B%250A%257D%250A%250Avoid%2520setup%28%29%2520%257B%250A%2520%2520oled.begin%28128%252C%252064%252C%2520sizeof%28tiny4koled_init_128x64br%29%252C%2520tiny4koled_init_128x64br%29%253B%250A%2520%252F%252F%2520Two%2520fonts%2520are%2520supplied%2520with%2520this%2520library%252C%2520FONT8X16%2520and%2520FONT6X8%250A%2520%252F%252F%2520To%2520clear%2520all%2520the%2520memory%250A%2520%2520%2520%2520oled.clear%28%29%253B%250A%2520%2520%2520%2520oled.on%28%29%253B%250A%2520%2520%2520%2520prepareDisplay%28%29%253B%250A%2520%2520%2520%2520oled.setFont%28FONT8X16%29%253B%2520%2520%250A%257D%250A%250Avoid%2520loop%28%29%2520%257B%250A%2520%2520float%2520rpm%253D1234.7%253B%250A%2520%2520%252F%252F%2520Checks%25201%2520second%2520passed%250A%2520%2520if%2520%28digitalRead%283%29%2520%253D%253D%2520HIGH%29%257B%250A%2520%2520%2520%2520oled.clear%28%29%253B%250A%2520%2520%2520%2520%252F%252F%2520Print%2520to%2520display%250A%2520%2520%2520%2520oled.setCursor%2848%252C%25200%29%253B%250A%2520%2520%2520%2520oled.print%28%2522ON%2520%2522%29%253B%250A%2520%2520%257D%250A%2520%2520else%257B%250A%2520%2520%2520%2520oled.clear%28%29%253B%250A%2520%2520%2520%2520oled.setCursor%2848%252C%25200%29%253B%250A%2520%2520%2520%2520oled.print%28%2522OFF%2522%29%253B%250A%2520%2520%257D%250A%257D"
+                                            style="width: 800px; height: 764px; border:0; transform: scale(1); overflow:hidden;"
+                                            sandbox="allow-scripts allow-same-origin">
+                                        </iframe>
+                                    </center>
+                                </div>
+                        </section>
+
+                        <p id="conclusiones">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Conclusiones -</h2>
+                        <p class="fs-6 mb-4">Se logró completar la funcionalidad básica de una pantalla OLED, además de entender las conexiones de la misma
+                            y la programación necesaria.
+                        </p>                        
+
+                        <p id="referencias">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Referencias -</h2>
+                        <p class="fs-6 mb-4">S/A (2022), "Pantalla OLED  SSD1306-SH1106 I2C-SPI 7 Pines". Extraido el 27/10/23 de 
+                            https://www.electronica.uy/images/oled.pdf</p> 
+                </div>
+            </section>
+
+            
+        </main>
+
+        <!-- Footer-->
+        <footer class="bg-dark py-4 mt-auto">
+            <div class="container px-5">
+                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                    <div class="col-auto"><div class="small m-0 text-white">Copyright &copy; Ingenierias-iberopuebla.mx 2023</div></div>
+                    <div class="col-auto">
+                        <a class="link-light small" href="#!">Privacy</a>
+                        <span class="text-white mx-1">&middot;</span>
+                        <a class="link-light small" href="#!">Terms</a>
+                        <span class="text-white mx-1">&middot;</span>
+                        <a class="link-light small" href="#!">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
